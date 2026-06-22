@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["fmt", "env-filter"] }
+tokio = { version = "1.52.3", features = ["full"] }
+async-openai = { version = "0.41.1", features = ["chat-completion"] }
+anyhow = "1.0.102"
+dotenv = "0.15.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+schemars = "1.2.1"
