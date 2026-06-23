@@ -1499,6 +1499,7 @@ dependencies = [
  "anyhow",
  "async-openai",
  "dotenv",
+ "futures",
  "schemars",
  "serde",
  "serde_json",
