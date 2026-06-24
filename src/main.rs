@@ -1,10 +1,7 @@
 use dotenv::dotenv;
 
 use tiny_agent::trace::init_tracing;
-use tiny_agent::core::chat;
-
-
-
+use tiny_agent::agent::chat;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {

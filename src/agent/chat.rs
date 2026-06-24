@@ -55,7 +55,7 @@ pub async fn completion_stream(
         let mut stream = client.chat().create_stream(request).await?;
         let mut tool_calls = vec![];
         let mut execution_handles = vec![];
-        while let Some(response) = stream.next().await {
+    while let Some(response) = stream.next().await {
             let chunk = response?;
             for choice in chunk.choices {
                 if let Some(content) = choice.delta.content {
